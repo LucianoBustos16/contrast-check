@@ -27,7 +27,7 @@ export const ContrastForm = ({
     }
 
     return (
-        <article className="flex gap-8">
+        <article className="flex gap-8 flex-col md:flex-row items-center md:items-end">
 
             <section className="grid w-full max-w-sm gap-1.5">
                 <Label htmlFor="text-color" className="text-left">Text Color</Label>

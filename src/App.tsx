@@ -22,7 +22,7 @@ function App() {
       <ContrastForm colorValues={colorValues} setColorValues={setColorValues} contrast={contrast}  />
 
       <h2>Resultados</h2>
-      <div className='grid item-center gap-8 grid-cols-2'>
+      <div className='grid item-center gap-8 grid-rows-2 md:grid-cols-2'>
         <LeaderBoard
           contrast={contrast}
         />
