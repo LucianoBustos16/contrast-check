@@ -5,7 +5,10 @@ import { LeaderBoard } from './components/LeaderBoard'
 import { AccessibilityExample } from './components/AccessibilityExample'
 import { hex } from "wcag-contrast"
 
+
 function App() {
+
+
 
   const [colorValues, setColorValues] = useState({
     text: '#112A46',
@@ -16,7 +19,7 @@ function App() {
   const contrast = hex( colorValues.text, colorValues.background)
 
   return (
-    <main className='max-w-5xl mx-auto w-full flex flex-col gap-16'>
+    <main  className='max-w-5xl mx-auto w-full flex flex-col gap-16'>
       
       <h1>Constrast Checker</h1>
       <ContrastForm colorValues={colorValues} setColorValues={setColorValues} contrast={contrast}  />
@@ -30,6 +33,15 @@ function App() {
           text={colorValues.text}
           background={colorValues.background}
           />
+
+        <footer className="flex w-full justify-between">
+            <p className="font-semibold">
+            Created with lots of ❤️ y 🍻️ by <a href="http://luchito.com.ar" target="blank">luchito</a>.
+            </p>
+
+
+
+        </footer>
 
 
       </div>
